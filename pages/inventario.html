@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <div id="contenedorInven">    
+        <header id="headerInven">
+            <img src="../images/Logotipo.jpg"alt="Logotipo.jpg" width="50px">
+            <h1>BIENVENIDOS A FARMACIA L&H</h1>
+            <h3>¡Ayudanos a Cuidarte!</h3>
+
+            
+        <nav id="nav">
+            <ul>
+                <li id="menu11"><a id="menu" href = "../index.html">Inicio</a></li>
+                <li id="menu1"><a id="menu" href = "Productos.html">Productos</a></li>  
+                <li id="menu1"><a id="menu" href = "Compra.html">Compra</a></li> 
+                <li id="menu1"><a id="menu" href = "inventario.html">Movimiento</a></li> 
+                <li id="menu1"><a id="menu" href = "movimientos_salida.html">Movimiento Salida</a></li>
+                <li id="menu1"><a id="menu" href = "Formulario.html">Formulario de Registro</a></li>  
+            
+                <li id="menu1"><a id="menu" href = "Login1.html">Login de Registro</a></li>   
+        </ul>
+        </nav>
+
+
+        </header>
+<center>
+     <!-- CONTENIDO PRINCIPAL-->
+    <div id="contInven">
+     <form action="">
+
+        <fieldset style="margin: 5px;" id="tableIn">
+         
+
+          <div class="row2col">
+              <label for="">id</label>
+              <input type="number"
+              id="IdDocumento"
+              name="IdDocumento"
+              required placeholder="id Solo numeros">
+          </div>
+          <div class="row2col">
+            <label for="idproveedor">Proveedor</label>
+            <input type="text"
+            id="idproveedor"
+            name="idproveedor"
+            required placeholder="Ingrese su nombre completo">
+        </div>
+
+        <div class="row2col">
+            <label for="idfecha">Fecha</label>
+            <input type="datetime-local"
+            id="idfecha"
+            name="idfecha"
+            required placeholder="Ingrese fecha">
+        </div>
+        <div class="row2col">
+            <label for="idproveedor">Moviemiento</label>
+            <input type="text"
+            id="idproveedor"
+            name="idproveedor"
+            required placeholder="Ingrese su nombre completo">
+        </div>
+     
+        </fieldset>
+        <div id="tableIn" rel="main-container">
+        <fieldset style="margin: 5px;">
+            <center>
+                <table border="1">
+                    <caption></caption>
+                    <thead>
+                        <th>CODIGO   </th>
+                        <th> PRODUCTO</th>
+                        <th> CANTIDAD </th>
+                        <th> PRECIO </th>
+                        <th> TOTAL </th>
+                    </thead>
+                    <tbody>
+                        <td>1</td>
+                        <td> Bisolvon</td>
+                        <td>2</td>
+                        <td>150</td>
+                        <td>300</td>
+                      <tr>
+                        <td>2</td>
+                        <td> Kalmafta</td>
+                        <td>3</td>
+                        <td>110</td>
+                        <td>330</td>
+                            </tr>
+                            
+                                    
+                    </tbody>
+            
+                </table>
+            </div>
+     </div>
+    </center>
+     <!-- Pie de Pagina-->
+     <footer id="footerInven">
+        
+        <h3> FARMACIA L&H</h3>
+        <h3>  Copyright 2021 LourdesCB</h3> 
+        <h3> Derecho de Autor</h3>
+        
+    </footer>
+    </div>
+</body>
+</html>

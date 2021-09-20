@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/jstyles.css">
+</head>
+
+<header id="header">
+   <center><img src="../images/Logotipo.jpg"alt="Logotipo.jpg" width="50px" center>
+    <h1>BIENVENIDOS A FARMACIA L&H</h1>
+    <h3>¡Ayudanos a Cuidarte!</h3></center>
+    <hr size="2px" color="black" />
+
+    <nav id="nav">
+        <ul>
+            <li id="menu11"><a id="menu" href = "../index.html">Inicio</a></li>
+            <li id="menu1"><a id="menu" href = "Productos.html">Productos</a></li>  
+            <li id="menu1"><a id="menu" href = "Compra.html">Compra</a></li> 
+            <li id="menu1"><a id="menu" href = "inventario.html">Movimiento</a></li>
+            <li id="menu1"><a id="menu" href = "movimientos_salida.html">Movimiento Salida</a></li>
+            <li id="menu1"><a id="menu" href = "Formulario.html">Formulario de Registro</a></li>  
+            <li id="menu1"><a id="menu" href = "Login1.html">Login de Registro</a></li>   
+            
+       </ul>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center">Catálogo de Productos</h1>
+        </header>
+
+        <form action="">
+            <label for="idCodigo">Código</label>
+            <input type="number" class="form-control" id="idCodigo" name="txtCodigo">
+
+            <label for="idNombre">Nombre</label>
+            <input type="text" class="form-control" id="idNombre" name="txtNombre">
+
+            <label for="idPrecio">Precio</label>
+            <input type="number" class="form-control" id="idPrecio" name="txtPrecio">
+
+            <hr>
+            <input type="button " color="blue" value="Guardar datos" class="btn btn-success" onclick="addProduct()">
+
+            <br>
+            <table class="table table-bordered table-striped">
+                <thead style="background-color: black; color: white;">
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="idTableBody">
+                </tbody>
+            </table>
+        </form>
+ 
+    </div>
+    <footer class="bg-dark">
+        <h4 class="text-center m-0 text-muted"> FARMACIA L&H</h4>
+        <h4 class="text-center m-0 text-muted"> Copyright 2021 LourdesCB</h4> 
+        <h4 class="text-center m-0 text-muted">Derecho de Autor</h4>
+      </footer>
+
+    <script src="../pages/js/scripts.js"></script>
+</body>
+</html>
